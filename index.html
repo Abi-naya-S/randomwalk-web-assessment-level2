@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Welcome Overlay -->
+    <div id="welcome-overlay">
+        <h1>Welcome to Tic Tac Toe</h1>
+    </div>
+
+    <!-- Game Section -->
+    <section class="game-section">
+        <header>
+            <h1 class="game--title">Tic Tac Toe</h1>
+        </header>
+        <div class="scoreboard">
+            <div class="score" id="playerX">Player X: 0</div>
+            <div class="score" id="playerO">Player O: 0</div>
+        </div>
+        <div class="game--status" id="gameStatus">Player X's turn</div>
+        <div class="game--container">
+            <div class="cell" data-cell-index="0"></div>
+            <div class="cell" data-cell-index="1"></div>
+            <div class="cell" data-cell-index="2"></div>
+            <div class="cell" data-cell-index="3"></div>
+            <div class="cell" data-cell-index="4"></div>
+            <div class="cell" data-cell-index="5"></div>
+            <div class="cell" data-cell-index="6"></div>
+            <div class="cell" data-cell-index="7"></div>
+            <div class="cell" data-cell-index="8"></div>
+        </div>
+        <div class="controls">
+            <button class="game--restart" id="restartButton">Restart Game</button>
+        </div>
+    </section>
+
+    <!-- Ribbon for winner -->
+    <div class="ribbon-container" id="ribbonContainer">
+        <div class="ribbon" id="ribbon">Player X Wins!</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
